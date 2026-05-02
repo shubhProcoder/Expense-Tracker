@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f4f5f7;   
+  color: #1a1a2e;              
+  padding: 30px 16px;
+  min-height: 100vh;
+}
+
+/* -- Main container — */
+.container {
+  max-width: 600px;
+  margin: 0 auto;  
+}
+
+/* --- Page title --- */
+.title {
+  font-size: 2rem;
+  color: #0d1b4b;     
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.form-card,
+.list-card {
+  background: #ffffff;
+  border: 1px solid #dde1ea;
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.form-card h2,
+.list-card h2 {
+  font-size: 1.1rem;
+  color: #0d1b4b;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0d1b4b;
+  letter-spacing: 0.3px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  color: #1a1a2e;
+}
+
+.form-group input:focus {
+  border-color: #0d1b4b;
+}
+
+button#addBtn {
+  width: 100%;
+  padding: 11px;
+  background-color: #0d1b4b;   /* Navy blue */
+  color: white;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+  letter-spacing: 0.4px;
+}
+
+button#addBtn:hover {
+  background-color: #1a2f6f;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.expense-amount {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #0d1b4b;
+}
+
+.expense-category {
+  font-size: 0.82rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.delete-btn {
+  background: none;
+  border: 1px solid #cc2222;
+  color: #cc2222;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: inherit;
+}
+
+.delete-btn:hover {
+  background-color: #cc2222;
+  color: white;
+}
+
+.empty-msg {
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* --- Mobile responsiveness (basic) --- */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .form-card,
+  .list-card {
+    padding: 20px;
+  }
+}
